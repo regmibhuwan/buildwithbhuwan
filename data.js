@@ -68,7 +68,7 @@ const SITE_DATA = {
         "ETL",
         "Statistical Analysis"
       ],
-      "url": "https://www.linkedin.com/in/regmibhuwan/",
+      "url": "https://www.linkedin.com/posts/regmibhuwan_dataanalysis-sql-python-activity-7365250570909126657-Pa9E",
       "icon": "📊",
       "featured": false,
       "linkText": "View on LinkedIn"
