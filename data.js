@@ -7,17 +7,25 @@ const SITE_DATA = {
       name: 'EVP Connect',
       tagline: 'Transforming How Teams Operate, Connect, and Communicate',
       description: [
-        'I work on the production floor at a poultry processing company. Every day, I watched the same friction: shift schedules buried in email chains, important announcements missed, new hires with no idea who to ask for help. There was no central place for 200+ employees to coordinate.',
-        'Nobody asked me to fix it. I went home after my shifts, opened my laptop, and started building.',
-        'EVP Connect is a complete employee communication platform I designed and developed from scratch. It handles shift scheduling, employee sign ups, a searchable staff directory, and company wide announcements. Every module, every screen, every line of code, built by me alone.',
-        'I walked into a room with our CFO and Senior Director of People Services and presented it. The Senior Director is now coordinating a technical and security review for company wide rollout.'
+        'I work on the production floor at a poultry processing company in Nova Scotia. Every day, I saw the same friction: shift schedules buried in email chains, announcements that never reached the night crew, new employees with no idea who to call for help after 4 PM when office staff had already left for the day.',
+        'Nobody asked me to fix this. I went home after my shifts, opened my laptop, and built an entire platform from scratch. No funding, no resources from the company. Just time I invested on my own because I wanted to make my coworkers\u0027 daily work life easier.'
       ],
+      features: [
+        { title: 'Digital Shift Sign Ups', desc: 'One click overtime and volunteer shift registration with auto generated reports, saving managers hours every week' },
+        { title: 'Production Schedules', desc: 'Accessible from any phone, anytime, anywhere. Replacing paper schedules that were easy to miss' },
+        { title: 'Smart Announcements', desc: 'Company wide notifications that auto expire when no longer relevant. 25+ announcements managed and delivered' },
+        { title: 'Staff Directory', desc: 'Quick access to office contacts. Critical for night shift workers who start at 4:30 PM after office staff have left' },
+        { title: 'News Feed', desc: 'Central place for company updates and team connections, keeping all shifts informed and connected' },
+        { title: 'Online Forms', desc: 'Digital forms replacing paper processes, reducing errors and making submissions accessible from anywhere' }
+      ],
+      screenshots: ['images/evp-dashboard.png', 'images/evp-schedules.png'],
+      outcome: 'Fully built, tested, and live. Presented to the CFO and Senior Director of People Services. Currently under internal security and budget review for company wide rollout.',
       tags: ['React', 'TypeScript', 'Supabase', 'Node.js', 'Fullstack'],
-      url: 'https://www.linkedin.com/in/regmibhuwan/',
+      url: '',
       icon: '🏢',
       featured: true,
-      badge: 'Under Technical & Security Review',
-      linkText: 'View on LinkedIn'
+      badge: 'Under Security & Budget Review',
+      linkText: ''
     },
     {
       id: 'vendor-analysis',

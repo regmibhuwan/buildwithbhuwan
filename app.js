@@ -62,24 +62,65 @@ function renderFeatured(data) {
   const tags = feat.tags.map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
   const story = feat.description.map(p => `<p>${escHtml(p)}</p>`).join('');
 
+  let featuresHtml = '';
+  if (feat.features && feat.features.length) {
+    featuresHtml = '<div class="featured-features">' +
+      feat.features.map(f => `
+        <div class="featured-feature">
+          <div class="featured-feature-title">${escHtml(f.title)}</div>
+          <div class="featured-feature-desc">${escHtml(f.desc)}</div>
+        </div>`).join('') +
+      '</div>';
+  }
+
+  let screenshotsHtml = '';
+  if (feat.screenshots && feat.screenshots.length) {
+    screenshotsHtml = '<div class="featured-screenshots">' +
+      feat.screenshots.map((src, i) => {
+        const labels = ['Dashboard & Content Management', 'Shift Scheduling & Sign Ups'];
+        return `<div class="featured-screenshot">
+          <img src="${escHtml(src)}" alt="EVP Connect UI" loading="lazy" />
+          <div class="featured-screenshot-label">${labels[i] || 'Platform UI'}</div>
+        </div>`;
+      }).join('') +
+      '</div>';
+  }
+
+  let outcomeHtml = '';
+  if (feat.outcome) {
+    outcomeHtml = `<div class="featured-outcome">${escHtml(feat.outcome)}</div>`;
+  }
+
+  const hasLink = feat.url && feat.url.trim();
+  const wrapTag = hasLink ? 'a' : 'div';
+  const linkAttrs = hasLink ? ` href="${escHtml(feat.url)}" target="_blank" rel="noopener"` : '';
+
+  let linkHtml = '';
+  if (hasLink && feat.linkText) {
+    linkHtml = `<span class="featured-link">
+      ${escHtml(feat.linkText)}
+      <span class="featured-link-arrow">↗</span>
+    </span>`;
+  }
+
   container.innerHTML = `
     <div class="featured-wrap reveal">
-      <a href="${escHtml(feat.url)}" target="_blank" rel="noopener" class="featured-card">
+      <${wrapTag}${linkAttrs} class="featured-card">
         <div class="featured-inner">
           ${feat.badge ? `<div class="featured-badge">${escHtml(feat.badge)}</div>` : ''}
           <div class="featured-icon">${feat.icon}</div>
           <div class="featured-name">${escHtml(feat.name)}</div>
           <div class="featured-tagline">${escHtml(feat.tagline)}</div>
           <div class="featured-story">${story}</div>
+          ${featuresHtml}
+          ${screenshotsHtml}
+          ${outcomeHtml}
           <div class="featured-bottom">
             <div class="featured-tags">${tags}</div>
-            <span class="featured-link">
-              ${escHtml(feat.linkText || 'View')}
-              <span class="featured-link-arrow">↗</span>
-            </span>
+            ${linkHtml}
           </div>
         </div>
-      </a>
+      </${wrapTag}>
     </div>`;
 }
 
