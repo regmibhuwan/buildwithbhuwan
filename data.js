@@ -6,40 +6,41 @@ const SITE_DATA = {
       "name": "EVP Connect",
       "tagline": "Transforming How Teams Operate, Connect, and Communicate",
       "description": [
-        "I work on the production floor at a poultry processing company in Nova Scotia. Every day, I saw the same friction: shift schedules buried in email chains, announcements that never reached the night crew, new employees with no idea who to call for help after 4 PM when office staff had already left for the day.",
-        "Nobody asked me to fix this. I went home after my shifts, opened my laptop, and built an entire platform from scratch. No funding, no resources from the company. Just time I invested on my own because I wanted to make my coworkers' daily work life easier."
+        "I work on the production floor at a poultry processing company in Nova Scotia. The existing systems work, but everything is scattered. Shift schedules are posted on a wall inside the building. Announcements and production schedules go out through individual emails. People Services forms are paper based. There is no central directory to find office staff contact information, which makes things harder for night shift workers since office staff finish their day before the night crew even starts.",
+        "I saw a communication gap and decided to close it. Nobody asked me to build this. I went home after my shifts, opened my laptop, and started building a unified, centralized platform on my own time with no funding or resources from the company.",
+        "The goal was simple: whether an employee is on the floor, on vacation, or just starting their first week, they should be able to access everything they need from their phone. No waiting to physically go in. No information lost because someone joined after an email was sent. Happy employees lead to happy customers."
       ],
       "features": [
         {
           "title": "Digital Shift Sign Ups",
-          "desc": "One click overtime and volunteer shift registration with auto generated reports, saving managers hours every week"
+          "desc": "Employees can sign up for overtime, volunteer shifts, and schedules with one click from their phone. Auto generated reports save managers hours every week. No need to physically be at the building to sign up."
         },
         {
           "title": "Production Schedules",
-          "desc": "Accessible from any phone, anytime, anywhere. Replacing paper schedules that were easy to miss"
+          "desc": "Always accessible from any phone, day or night. Employees on leave or vacation can check schedules without waiting to come in."
         },
         {
-          "title": "Smart Announcements",
-          "desc": "Company wide notifications that auto expire when no longer relevant. 25+ announcements managed and delivered"
+          "title": "Persistent Announcements",
+          "desc": "Unlike email, announcements stay visible. A new employee who joins after an email was sent will still see every relevant update. Nothing gets lost."
         },
         {
           "title": "Staff Directory",
-          "desc": "Quick access to office contacts. Critical for night shift workers who start at 4:30 PM after office staff have left"
+          "desc": "Quick access to People Services and office staff contacts. Especially valuable for night shift workers who start at 4:30 PM, after office staff have already left for the day."
         },
         {
           "title": "News Feed",
-          "desc": "Central place for company updates and team connections, keeping all shifts informed and connected"
+          "desc": "A central place for company updates and team connections. Employees on vacation or leave can stay informed about what is happening inside the company without being there."
         },
         {
           "title": "Online Forms",
-          "desc": "Digital forms replacing paper processes, reducing errors and making submissions accessible from anywhere"
+          "desc": "People Services forms digitized and accessible online. Employees can fill out and submit forms directly to the respective department from anywhere, replacing paper based processes."
         }
       ],
       "screenshots": [
         "images/evp-dashboard.png",
         "images/evp-schedules.png"
       ],
-      "outcome": "Fully built, tested, and live. Presented to the CFO and Senior Director of People Services. Currently under internal security and budget review for company wide rollout.",
+      "outcome": "Fully built, tested, and live. Presented to the CFO and Senior Director of People Services. Currently under internal security and budget review for company wide rollout. Platform link is not shared here as it contains company internal information, out of respect for the organization.",
       "tags": [
         "React",
         "TypeScript",
